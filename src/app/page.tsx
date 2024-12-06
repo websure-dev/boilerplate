@@ -7,9 +7,20 @@ export default function Home() {
         Welcome to the Boilerplate App
       </h1>
       <p className="mb-4">This is a simple boilerplate Next.js application.</p>
-      <Link href="/api/hello-world" className="text-blue-500 hover:underline">
-        Check out the API route
-      </Link>
+      <nav className="space-y-2">
+        <Link
+          href="/api/hello-world"
+          className="text-blue-500 hover:underline block"
+        >
+          Check out the API route
+        </Link>
+        <Link
+          href="/send-message"
+          className="text-blue-500 hover:underline block"
+        >
+          Send a message to Teams
+        </Link>
+      </nav>
     </div>
   );
 }
